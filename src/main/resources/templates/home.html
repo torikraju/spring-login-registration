@@ -1,0 +1,30 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+
+<head>
+<title>home</title>
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+
+<title>home</title>
+
+</head>
+<body>
+
+
+	<p th:text="${user}"></p>
+
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="Logout" />
+	</form>
+
+
+</body>
+</html>
